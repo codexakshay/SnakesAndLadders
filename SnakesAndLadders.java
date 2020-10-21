@@ -13,7 +13,7 @@ public class SnakesAndLadders
 
 				 	if (playerOne  == 100)
 					 {
-						 System.exit(0);
+						 winPlayer();
 					 } 
 				 	
 					if (playerOne + roll > 100)
@@ -134,6 +134,12 @@ public class SnakesAndLadders
 			
 		}
 	}
+	
+	public void winPlayer()
+	{
+		System.out.print("\nPLAYER WON");
+		System.exit(0);
+	}
 
 	public void playGame()
 	{
@@ -154,4 +160,4 @@ public class SnakesAndLadders
 }
 
 
-//UC3
+//UC4
