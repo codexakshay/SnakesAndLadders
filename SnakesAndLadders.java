@@ -6,6 +6,8 @@ public class SnakesAndLadders
 {	
 	static int playerOne = 0;
 	private static Random rand = new Random();
+	static int Turn = 0;
+
 	public void diceRoll()
 	{
 		 	int roll = rand.nextInt(6) + 1;
@@ -16,17 +18,20 @@ public class SnakesAndLadders
 						 winPlayer();
 					 } 
 					
+					if (playerOne + roll > 100)
+					 {
+						roll = 0;
+						playerOne=playerOne + roll;
+					
+					 }
+					
 				 	if (playerOne < 100)
 				 	{
+				 		Turn = Turn + 1;
+				 		System.out.println("\nTurn : " + Turn);
 				 		playerOne = playerOne + roll;
 				 		System.out.println("Player One Rolled : "+roll);
 				 	}
-					
-						if (playerOne + roll > 100)
-					{
-						roll = 0;
-						playerOne=playerOne + roll;
-					}
 
  	}
 
@@ -159,4 +164,4 @@ public class SnakesAndLadders
 }
 
 
-//UC5
+//UC6
