@@ -15,19 +15,18 @@ public class SnakesAndLadders
 					 {
 						 winPlayer();
 					 } 
-				 	
-					if (playerOne + roll > 100)
-					 {
-						roll = 0;
-						playerOne=playerOne + roll;
-					
-					 }
 					
 				 	if (playerOne < 100)
 				 	{
 				 		playerOne = playerOne + roll;
 				 		System.out.println("Player One Rolled : "+roll);
 				 	}
+					
+						if (playerOne + roll > 100)
+					{
+						roll = 0;
+						playerOne=playerOne + roll;
+					}
 
  	}
 
@@ -160,4 +159,4 @@ public class SnakesAndLadders
 }
 
 
-//UC4
+//UC5
