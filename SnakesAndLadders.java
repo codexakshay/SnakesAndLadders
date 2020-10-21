@@ -47,5 +47,4 @@ public class SnakesAndLadders
 
 }
 
-
 //UC2
